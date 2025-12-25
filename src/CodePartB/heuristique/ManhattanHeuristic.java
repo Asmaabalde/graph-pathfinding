@@ -1,7 +1,7 @@
 package CodePartB.heuristique;
 
 /**
- * Heuristique de Manhattan (distance L1).
+ * Heuristique de Manhattan
  * <p>
  * Adaptée aux déplacements en 4 directions (haut, bas, gauche, droite).
  * Elle calcule la distance comme la somme des différences absolues

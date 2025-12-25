@@ -1,3 +1,10 @@
+/**
+ * Classe Dijkstra
+ * @author BALDE Asmaou
+ * @see CodePartB.graph.Graph
+ *
+ */
+
 package CodePartB.algorithms;
 
 import CodePartB.graph.*;
@@ -9,7 +16,7 @@ import java.util.LinkedList;
 /**
  * Implémentation de l'algorithme de Dijkstra pour le plus court chemin.
  */
-public class Djikstra
+public class Dijkstra
 {
     /**
      * Calcule le plus court chemin entre deux sommets du graphe.
@@ -40,7 +47,7 @@ public class Djikstra
         // Boucle principale
         while (to_visit.contains(end))
         {
-            // trouver min_v (sommet avec la plus petite distance temporaire)
+            // trouver min_v le sommet avec la plus petite distance temporaire)
             int min_v = -1;
             double min_distance = Double.POSITIVE_INFINITY;
             for(int v :  to_visit)
@@ -61,7 +68,7 @@ public class Djikstra
             }
             number_tries++;
 
-            //Pour tous ses voisins, on vérifie si on est plus rapide en passant par ce noeud.
+            // Pour tous ses voisins, on vérifie si on est plus rapide en passant par ce noeud
             for(Edge e : graph.getVertexlist().get(min_v).getAdjacencylist())
             {
                 int to_try = e.getDestination();
@@ -108,7 +115,7 @@ public class Djikstra
             board.addPath(graph, path);
         }
 
-        // Statistiques
+        // Statistiques (console)
         System.out.println("Done! Using Dijkstra:");
         System.out.println("Number of nodes explored: " + number_tries);
         System.out.println("Total time of the path: " + graph.getVertexlist().get(end).getTimeFromSource());
