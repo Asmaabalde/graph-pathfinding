@@ -3,7 +3,7 @@
  * @author BALDE Asmaou
  **/
 
-package MiniProjetImage.imagegraph;
+package CodeMiniProjet.imagegraph;
 
 /**
  * Représente un pixel de l'image sous forme de sommet du graphe.

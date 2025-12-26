@@ -1,11 +1,11 @@
 /**
  * Classe Dijkstra
  * @author BALDE Asmaou
- * @see MiniProjetImage.imagegraph.PixelNode
- * @see MiniProjetImage.imagegraph.Edge
+ * @see CodeMiniProjet.imagegraph.PixelNode
+ * @see CodeMiniProjet.imagegraph.Edge
  **/
 
-package MiniProjetImage.imagegraph;
+package CodeMiniProjet.imagegraph;
 
 
 import java.util.*;

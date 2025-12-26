@@ -20,7 +20,7 @@ import java.io.*;
 import java.util.*;
 import java.util.List;
 
-public class App extends JFrame
+public class GraphShortestPath extends JFrame
 {
     // Composants de l'interface
     private JComboBox<String> algoComboBox;
@@ -36,7 +36,7 @@ public class App extends JFrame
     /**
      * Constructeur : initialise la fenêtre et les panneaux.
      */
-    public App()
+    public GraphShortestPath()
     {
         super("GraphShortestPath - BALDE Asmaou");
 
@@ -383,37 +383,34 @@ public class App extends JFrame
         }
 
         // Écriture du résultat dans un fichier
-        File fichier = new File(outputName);
-        File filePath;
+        String currentDir = System.getProperty("user.dir");
 
-        // Gestion du chemin de sortie
-        if(outputName.contains("/") || outputName.contains("\\") || fichier.isAbsolute())
-        {
-            if(!outputName.toLowerCase().endsWith(".txt"))
-                filePath = new File(fichier + ".txt");
-            else
-                filePath = fichier;
-        }
-        else
-        {
-            if(!outputName.toLowerCase().endsWith(".txt"))
-                outputName += ".txt";
+        // Dossier de sauvegarde portable
+        File saveDir = new File(currentDir + File.separator + "sauvegardes");
 
-            File dossier = new File("src/CodePartB/sauvegardes");
-            if(!dossier.exists())
-                dossier.mkdir();
+        // Crée tous les dossiers nécessaires
+        saveDir.mkdirs();
 
-            filePath = new File(dossier, outputName);
+        // Nom du fichier (ajout .txt si absent)
+        if (!outputName.toLowerCase().endsWith(".txt")) {
+            outputName += ".txt";
         }
 
-        if (!filePath.exists()) {
-            filePath.createNewFile();
-        }
+        // Fichier final
+        File filePath = new File(saveDir, outputName);
+
+        // S'assure que le dossier parent existe
+        filePath.getParentFile().mkdirs();
+
+        // Création du fichier si nécessaire
+        filePath.createNewFile();
+
+
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
-            bw.write("Algorithme utilisé : " + algo + " (");
+            bw.write("Algorithme utilisé : " + algo);
             if(!algo.equals("Dijkstra"))
-                bw.write(heuristic.natureHeuristique() + ")");
+                bw.write(" (" +heuristic.natureHeuristique() + ")");
             bw.newLine();
             bw.newLine();
 
@@ -460,6 +457,6 @@ public class App extends JFrame
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception ignored) {}
 
-        SwingUtilities.invokeLater(App::new);
+        SwingUtilities.invokeLater(GraphShortestPath::new);
     }
 }

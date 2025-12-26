@@ -1,10 +1,10 @@
 /**
  * Classe Edge
  * @author BALDE Asmaou
- * @see MiniProjetImage.imagegraph.PixelNode
+ * @see CodeMiniProjet.imagegraph.PixelNode
  **/
 
-package MiniProjetImage.imagegraph;
+package CodeMiniProjet.imagegraph;
 
 /**
  * Représente une arête sortante dans le graphe

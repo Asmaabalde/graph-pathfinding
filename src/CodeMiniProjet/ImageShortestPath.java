@@ -3,15 +3,15 @@
  * @author BALDE Asmaou
  **/
 
-package MiniProjetImage;
-import MiniProjetImage.ui.MainWindow;
+package CodeMiniProjet;
+import CodeMiniProjet.ui.MainWindow;
 
 
 
 /**
  * Point d'entrée principal de l'application.
  */
-public class ImageGraphApp {
+public class ImageShortestPath {
 
 /**
  * Méthode principale lançant l'application

@@ -3,7 +3,7 @@
  * @author BALDE Asmaou
  **/
 
-package MiniProjetImage.ui;
+package CodeMiniProjet.ui;
 
 import javax.swing.*;
 import java.awt.*;

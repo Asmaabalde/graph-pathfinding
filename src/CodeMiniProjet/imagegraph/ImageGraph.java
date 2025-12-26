@@ -3,7 +3,7 @@
  * @author BALDE Asmaou
  **/
 
-package MiniProjetImage.imagegraph;
+package CodeMiniProjet.imagegraph;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

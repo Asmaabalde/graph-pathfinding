@@ -1,11 +1,11 @@
 /**
  * Classe GraphBuilder
  * @author BALDE Asmaou
- * @see MiniProjetImage.imagegraph.PixelNode
- * @see MiniProjetImage.imagegraph.Edge
- * @see MiniProjetImage.imagegraph.ImageGraph
+ * @see CodeMiniProjet.imagegraph.PixelNode
+ * @see CodeMiniProjet.imagegraph.Edge
+ * @see CodeMiniProjet.imagegraph.ImageGraph
  **/
-package MiniProjetImage.imagegraph;
+package CodeMiniProjet.imagegraph;
 
 import java.util.*;
 

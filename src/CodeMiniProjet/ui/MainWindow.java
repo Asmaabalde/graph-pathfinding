@@ -1,12 +1,12 @@
 /**
  * Classe ImagePanel
  * @author BALDE Asmaou
- * @see MiniProjetImage.ui.ControlPanel
+ * @see CodeMiniProjet.ui.ControlPanel
  **/
 
-package MiniProjetImage.ui;
+package CodeMiniProjet.ui;
 
-import MiniProjetImage.imagegraph.ImageGraph;
+import CodeMiniProjet.imagegraph.ImageGraph;
 
 import javax.swing.*;
 import java.awt.*;
