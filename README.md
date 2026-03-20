@@ -31,7 +31,7 @@ Cette partie consiste à appliquer Dijkstra et A* sur des **cartes 2D** où chaq
 - Les 8 voisins (haut, bas, gauche, droite, diagonales) sont connectés
 - Le poids d’une arête est :  
   
-w = \frac{t_A + t_B}{2}
+w = t_A + t_B/2
 
 
 - Les diagonales sont pondérées par √2
