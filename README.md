@@ -33,8 +33,10 @@ Cette partie consiste à appliquer Dijkstra et A* sur des **cartes 2D** où chaq
   
 
 \[
-  w = \frac{t_A + t_B}{2}
-  \]
+w = \frac{t_A + t_B}{2}
+\]
+
+
 
 
 - Les diagonales sont pondérées par √2
