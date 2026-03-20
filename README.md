@@ -112,6 +112,14 @@ L’application permet d’explorer visuellement la structure interne d’une im
 
 ---
 
+## ▶️ Exécution
+
+Télécharger le fichier `.jar` dans la section Releases, puis exécuter :
+
+java -jar graph-pathfinding.jar
+
+---
+
 ## 🚀 Avancement
 
 Les deux projets sont **fonctionnels**.  
